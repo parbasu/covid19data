@@ -1,0 +1,879 @@
+input[type=checkbox], input[type=radio] {
+    width: 0; 
+}
+
+
+
+.is-focused:not(.is-open) > .Select-control {
+  border-color: black;
+  box-shadow: 0 0 0 3px white;
+}
+
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+button:focus {outline:0;}
+
+
+
+.tooltip.show /* The CSS classes that the tooltip has */ {
+    opacity: 1; /* or whatever */
+}
+
+/* dash leaflet tooltip override to produce text labels */
+
+.leaflet-tooltip.text-tooltip {
+    padding: 0px 0px 0px 0px !important;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+    text-align: center;
+    /*z-index: 1500 !important;*/
+}
+
+
+
+.leaflet-tooltip-pane {
+    z-index: 4000 !important;
+    padding: 0px 0px 0px 0px !important;
+
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px Helvetica Neue, TabletGothic, Helvetica,Arial,FreeSans,sans-serif !important;
+    background: white;
+    box-shadow: 0 0 0 0;
+    border-radius: 0;
+    
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+
+
+
+.dot {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+    margin-bottom: -3.5px;
+    margin-right: 2px;
+    display: inline-block;
+}
+
+
+.leaflet-tooltip.text-vacc-tooltip {
+    padding: 0px 0px 0px 0px !important;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+    text-align: center;
+    line-height: 1.1;
+}
+
+
+
+
+
+.district {
+     color: #252525; 
+     letter-spacing: .03em;
+     font-size:  .9385rem;
+     font-weight: 700;
+     margin-top: 10px;
+
+}
+
+
+/* also for trend*/
+.district-icu {
+     color: #252525; 
+     letter-spacing: .03em;
+     font-size:  .9385rem;
+     font-weight: 700;
+     margin-top: 19px;
+
+}
+
+.nodata {
+   color: #252525; 
+   letter-spacing: .03em;
+   font-size: .9375rem;
+   font-weight: 400;
+   margin-top: 19px;
+}
+
+
+
+.federal-state {
+     color: #69696c;
+     letter-spacing: .05em;   
+}
+
+
+/* also for trend*/
+.federal-state-icu {
+     color: #69696c;
+     letter-spacing: .05em;   
+}
+
+.federal-state-vacc {
+    color: #252525; 
+   letter-spacing: .03em;
+   font-size:  .9375rem;
+   font-weight: 700;
+   margin-top: 19px;
+}
+
+
+.metric-value {
+     display: table-cell;
+     text-align: right;
+     width: 3.6rem;
+     padding-right: .3em;
+     font-weight: 700;
+    
+}
+
+.metric-value-icu {
+     display: table-cell;
+     text-align: right;
+     width: 3.6rem;
+     padding-right: .3em;
+     font-weight: 700;
+    
+}
+
+.metric-value-vacc {
+     display: table-cell;
+     text-align: right;
+     width: 3.6rem;
+     padding-right: .3em;
+     font-weight: 700;
+    
+}
+
+
+.metric-text {
+     display: table-cell;
+     text-align: left;   
+}
+
+
+.metric-text-icu {
+     display: table-cell;
+     text-align: left;  
+    font-size: 0.82em;
+}
+
+.metric-text-vacc {
+     display: table-cell;
+     text-align: left;   
+}
+
+.metric-text-trend {
+     display: table-cell;
+     text-align: left;  
+    padding-left: 5px;
+}
+
+
+.metric-text-icu-blue {
+     display: table-cell;
+     text-align: left;   
+}
+
+
+.metric {
+    color: #252525;
+    font-size: .9375rem;
+    letter-spacing: .03em;
+    
+}
+
+
+.metric-icu {
+    color: rgb(105, 105, 108);
+    font-size: .9375rem;
+    letter-spacing: .03em;
+    
+}
+
+.metric-trend {
+    color: #252525;
+    font-size: .9375rem;
+    letter-spacing: .03em;
+    
+}
+
+.metric-icu-blue {
+    color: #5a5ec8;
+    font-size: .9375rem;
+    letter-spacing: .03em;
+    
+}
+
+.metric-vacc {
+    color: rgb(85, 170, 0);
+    font-size: .9375rem;
+    letter-spacing: .03em;
+    
+}
+
+.metric-vacc-fully {
+    color: #0fa8a5;
+    font-size: .9375rem;
+    letter-spacing: .03em;
+    
+}
+
+.metric-capita {
+   color: #69696c;
+   font-size: .75rem;
+   letter-spacing: .05em;
+
+}
+
+
+
+.element {
+  background-color: red;
+  animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/*
+.leaflet-pane .leaflet-pane-4-pane {
+animation: pulse 1s;
+}
+
+*/
+
+
+/* switch styling override*/
+
+.custom-switch .custom-control-input:checked~.custom-control-label::after {
+    background-color: grey;
+}
+
+.custom-switch .custom-control-label::after {
+    background-color: grey;
+     cursor: pointer;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    border-color: grey;
+    background-color: white;
+}
+
+.custom-control-label::before {
+    border: grey solid 1px;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: none;
+}
+
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+    border-color:grey;
+}
+
+.custom-control-input:not(:disabled):active~.custom-control-label::before {
+    background-color: white;
+    border-color: grey;
+}
+
+ .custom-switch .custom-control-label::before {
+    cursor: pointer;
+}
+
+.emptyswitch .custom-control-label::after {
+    background-color: white;
+}
+
+
+
+
+.leaflet-container {
+    background: rgba(0,0,0,0) !important;
+}
+
+
+.leaflet-tooltip.canvas-tooltip {
+    padding: 0px 0px 0px 0px !important;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+    text-align: center;
+    transform: none !important;
+    /*z-index: 1500 !important;*/
+}
+
+
+
+
+#select-state .Select-control {
+ width: 220px !important;
+ font-size: 13px;
+ font-weight: 410;
+/*  position: absolute;
+  left: 440px;
+  top: 680px;
+  z-index: 1000; */
+  height: 20px;
+}
+
+
+#select-state .is-open>.Select-control {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-radius: 4px;  
+}
+
+
+#select-state .Select-menu-outer {
+ width: 220px !important;
+ opacity: 0.95;
+ font-size: 13px;
+ font-weight: 410;
+ position: absolute;
+ top: -199px;  
+/* left: 440px;
+  top: 480px;
+  z-index: 1000; */
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-radius: 4px;
+}
+
+
+
+#select-district .Select-control {
+ font-size: 14px;
+ font-weight: 410;
+ position: absolute;
+ z-index: 400;
+}
+
+#select-district .is-open>.Select-control {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-radius: 4px;  
+}
+
+#select-district .Select-menu-outer {
+ opacity: 0.95;
+ font-size: 14px;
+ font-weight: 410;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-radius: 4px;
+ position: absolute;
+  top: 35px;
+ z-index: 1000;
+}
+
+
+
+.dropdown-menu.show {
+    overflow-y: auto;
+    max-height: 200px;
+}
+    
+
+.gRFjMP {
+    display: block;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.gRFjMP:hover {
+  font-weight: 500;
+}
+
+#return-switch .custom-control-label:hover {
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: top;
+    font-weight:bolder;
+    cursor: pointer;
+}
+
+
+.return-hover:hover {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.form-check {
+    position: relative;
+    display: block;
+    padding-left: 0;
+}
+
+
+
+#button-h1:hover {
+  opacity: 0.6;
+}
+
+#button-h2:hover {
+  opacity: 0.6;
+}
+
+#button-h3:hover {
+  opacity: 0.6;
+}
+
+#button-h4:hover {
+  opacity: 0.6;
+}
+
+#button-h5:hover {
+  opacity: 0.6;
+}
+
+#button-l1:hover {
+  opacity: 0.6;
+}
+
+#button-l2:hover {
+  opacity: 0.6;
+}
+
+#button-l3:hover {
+  opacity: 0.6;
+}
+
+#button-l4:hover {
+  opacity: 0.6;
+}
+
+#button-l5:hover {
+  opacity: 0.6;
+}
+
+#button-recovered {
+cursor: default !important;
+}
+
+
+#seven-one {
+cursor: default !important;
+}
+
+#seven-two {
+cursor: default !important;
+}
+
+
+#eight-one {
+cursor: default !important;
+}
+
+#eight-two {
+cursor: default !important;
+}
+
+#eight-three {
+cursor: default !important;
+}
+
+
+
+
+/* ALL figure properties -------------------------- START */
+
+/* figure cumulative vacc  -------------------------- START */
+
+
+
+#figure-cumulative-vacc-dummy > div.js-plotly-plot {
+position: absolute;
+/*top: 100px; */
+z-index:400;
+}
+
+#figure-cumulative-vacc-dummy > div.js-plotly-plot > div > div > svg:nth-child(1) > g.draglayer.cursor-crosshair > g > rect.nsewdrag.drag.cursor-pointer {
+pointer-events: none !important;
+}
+
+
+/* figure cumulative vacc  -------------------------- END */
+
+
+/* figure daily vacc  -------------------------- START */
+
+#figure-daily-vacc-dummy > div.js-plotly-plot {
+position: absolute;
+/*top: 100px; */
+z-index: 600;
+}
+
+#figure-daily-vacc-dummy > div.js-plotly-plot > div > div > svg:nth-child(1) > g.draglayer.cursor-crosshair > g > rect.nsewdrag.drag.cursor-pointer {
+pointer-events: none !important;
+}
+/* figure daily vacc  -------------------------- END */
+
+
+/* figure icu ------------------- START */
+
+
+#figure-icu-dummy > div.js-plotly-plot {
+position: absolute;
+z-index: 400;
+/*top: 100px; */
+}
+
+#figure-icu-dummy > div.js-plotly-plot > div > div > svg:nth-child(1) > g.draglayer.cursor-crosshair > g > rect.nsewdrag.drag.cursor-pointer {
+pointer-events: none !important;
+}
+
+
+/* figure icu ------------------- END */
+
+
+
+#figure-cases-dummy > div.js-plotly-plot {
+position: absolute;
+/*top: 100px; */
+z-index:450;
+}
+
+
+#figure-cases-dummy > div.js-plotly-plot > div > div > svg:nth-child(1) > g.draglayer.cursor-crosshair > g > rect.nsewdrag.drag.cursor-pointer {
+pointer-events: none !important;
+}
+
+
+
+
+
+/* ALL figure properties ------------------------------------------------- END*/
+
+#vaccBar {
+  border: 2px solid white;
+  border-radius: 0px;
+  overflow: hidden;
+   display: grid;
+}
+
+#fullyVaccBar {
+  background: #0fa8a5;
+}
+
+#firstVaccBar {
+  background: #5a0;
+}
+
+#nonVaccBar {
+  background: #eeeef0;
+}
+
+
+#vaccBar  div {
+  color: #535560;
+  font-size: 12px;
+  line-height: 20px;
+  display: flex;
+  /* align-items: center;*/
+  justify-content: center;
+}
+
+
+#squareFirstVacc {
+  height: 10px;
+  width: 10px;
+  background-color: #5a0;
+  border-radius: 1px;
+  margin-right: 3px;
+  margin-top: 3.034px;;
+
+}
+
+#squareFullyVacc {
+  height: 10px;
+  width: 10px;
+  background-color: #0fa8a5;
+  border-radius: 1px;
+  margin-right: 3px;
+  margin-top: 3.034px;;
+}
+
+
+#map-div_Germany > div > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-tooltip-pane > div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-top {
+padding-top: 0px;
+padding-bottom: 9px;
+}
+
+#map-div_Baden-Württemberg > div > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-tooltip-pane > div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-top {
+padding-top: 0px;
+padding-bottom: 9px;
+}
+
+#map-div_Bayern > div > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-tooltip-pane > div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-top {
+padding-top: 0px;
+padding-bottom: 9px;
+}
+
+#map-div_Brandenburg > div > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-tooltip-pane > div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-top {
+padding-top: 0px;
+padding-bottom: 9px;
+}
+
+#map-div_Hessen > div > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-tooltip-pane > div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-top {
+padding-top: 0px;
+padding-bottom: 9px;
+}
+
+#map-div_Mecklenburg-Vorpommern > div > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-tooltip-pane > div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-top {
+padding-top: 0px;
+padding-bottom: 9px;
+}
+
+#map-div_Niedersachsen > div > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-tooltip-pane > div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-top {
+padding-top: 0px;
+padding-bottom: 9px;
+}
+
+#map-div_Nordrhein-Westfalen  > div > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-tooltip-pane > div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-top {
+padding-top: 0px;
+padding-bottom: 9px;
+}
+
+#map-div_Rheinland-Pfalz > div > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-tooltip-pane > div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-top {
+padding-top: 0px;
+padding-bottom: 9px;
+}
+
+#map-div_Saarland > div > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-tooltip-pane > div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-top {
+padding-top: 0px;
+padding-bottom: 9px;
+}
+
+#map-div_Sachsen > div > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-tooltip-pane > div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-top {
+padding-top: 0px;
+padding-bottom: 9px;
+}
+
+
+#map-div_Sachsen-Anhalt > div > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-tooltip-pane > div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-top {
+padding-top: 0px;
+padding-bottom: 9px;
+}
+
+
+#map-div_Schleswig-Holstein > div > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-tooltip-pane > div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-top {
+padding-top: 0px;
+padding-bottom: 9px;
+}
+
+#map-div_Thüringen > div > div.leaflet-pane.leaflet-map-pane > div.leaflet-pane.leaflet-tooltip-pane > div.leaflet-tooltip.leaflet-zoom-animated.leaflet-tooltip-top {
+padding-top: 0px;
+padding-bottom: 9px;
+}
+
+
+
+/*trying an alternative approach*/
+
+#vertical-line-cumulative-vacc {
+  border-left: 1.7px solid grey;
+  opacity: 0.6;
+  position: absolute;
+  width: 1px;
+  pointer-events: none; 
+  z-index: 600;
+  display: none;
+
+}
+
+#tooltip-box-cumulative-vacc {
+    position: absolute;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 30%), 0 8px 20px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.95);
+    width: 180px;
+    height: 96px;
+    text-align: center;
+    pointer-events: none;
+    display: none;
+    padding-top: 6px;
+    color: #69696c;
+    font-family: Helvetica;
+    line-height: 1.12;
+     z-index: 600;
+
+}
+
+
+#figure-cumulative-vacc > div.js-plotly-plot {
+position: absolute;
+z-index: 500;       
+/*top: 100px;    */
+}
+
+
+#figure-cumulative-vacc > div.js-plotly-plot > div > div > svg:nth-child(1) > g.draglayer.cursor-crosshair > g > rect.nsewdrag.drag.cursor-pointer {
+ cursor: default;
+}
+
+#figure-cumulative-vacc > div.js-plotly-plot > div > div > svg:nth-child(5) > g > g.hovertext {
+opacity: 0;
+}
+
+
+
+#vertical-line-daily-vacc {
+  border-left: 1.7px solid grey;
+  opacity: 0.6;
+  position: absolute;
+  width: 1px;
+  pointer-events: none; 
+  z-index: 800;
+  display: none;
+
+}
+
+#tooltip-box-daily-vacc {
+    position: absolute;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 30%), 0 8px 20px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.95);
+    width: 250px;
+    height: 96px;
+    text-align: center;
+    pointer-events: none;
+    display: none;
+    padding-top: 6px;
+    color: #69696c;
+    font-family: Helvetica;
+    line-height: 1.12;
+     z-index: 800;
+
+}
+
+
+#figure-daily-vacc > div.js-plotly-plot {
+position: absolute;
+z-index: 700;       
+/*top: 100px;    */
+}
+
+
+#figure-daily-vacc > div.js-plotly-plot > div > div > svg:nth-child(1) > g.draglayer.cursor-crosshair > g > rect.nsewdrag.drag.cursor-pointer {
+ cursor: default;
+}
+
+#figure-daily-vacc > div.js-plotly-plot > div > div > svg:nth-child(5) > g > g.hovertext {
+opacity: 0;
+}
+
+
+
+#vertical-line-icu {
+  border-left: 1.7px solid grey;
+  opacity: 0.6;
+  position: absolute;
+  width: 1px;
+  pointer-events: none; 
+  z-index: 800;
+  display: none;
+
+}
+
+#tooltip-box-icu {
+    position: absolute;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 30%), 0 8px 20px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.95);
+    width: 284px;
+    height: 82px;
+    text-align: center;
+    pointer-events: none;
+    display: none;
+    padding-top: 6px;
+    color: #69696c;
+    font-family: Helvetica;
+    line-height: 1.12;
+     z-index: 800;
+
+}
+
+
+#figure-icu > div.js-plotly-plot {
+position: absolute;
+z-index: 700;       
+/*top: 100px;    */
+}
+
+
+#figure-icu > div.js-plotly-plot > div > div > svg:nth-child(1) > g.draglayer.cursor-crosshair > g > rect.nsewdrag.drag.cursor-pointer {
+ cursor: default;
+}
+
+#figure-icu > div.js-plotly-plot > div > div > svg:nth-child(5) > g > g.hovertext {
+opacity: 0;
+}
+
+
+
+
+#vertical-line-cases {
+  border-left: 1.7px solid grey;
+  opacity: 0.6;
+  position: absolute;
+  width: 1px;
+  pointer-events: none; 
+  z-index: 800;
+  display: none;
+
+}
+
+#tooltip-box-cases {
+    position: absolute;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 30%), 0 8px 20px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.95);
+    text-align: center;
+    pointer-events: none;
+    display: none;
+    padding-top: 6px;
+    color: #69696c;
+    font-family: Helvetica;
+    line-height: 1.12;
+     z-index: 800;
+
+}
+
+
+#figure-cases > div.js-plotly-plot {
+position: absolute;
+z-index: 700;       
+/*top: 100px;    */
+}
+
+
+#figure-cases > div.js-plotly-plot > div > div > svg:nth-child(1) > g.draglayer.cursor-crosshair > g > rect.nsewdrag.drag.cursor-pointer {
+ cursor: default;
+}
+
+#figure-cases > div.js-plotly-plot > div > div > svg:nth-child(5) > g > g.hovertext {
+opacity: 0;
+}
