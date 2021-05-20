@@ -536,7 +536,7 @@ pointer-events: none !important;
 
 
 #figure-icu-dummy > div.js-plotly-plot {
-position: absolute;
+position: relative;
 z-index: 400;
 /*top: 100px; */
 }
@@ -551,7 +551,7 @@ pointer-events: none !important;
 
 
 #figure-cases-dummy > div.js-plotly-plot {
-position: absolute;
+/*position: absolute;
 /*top: 100px; */
 z-index:450;
 }
@@ -818,7 +818,7 @@ opacity: 0;
 
 
 #figure-icu > div.js-plotly-plot {
-position: absolute;
+position: relative;
 z-index: 700;       
 /*top: 100px;    */
 }
@@ -877,4 +877,20 @@ z-index: 700;
 #figure-cases > div.js-plotly-plot > div > div > svg:nth-child(5) > g > g.hovertext {
 opacity: 0;
 }
+
+#bottom-text{
+height: 0px;
+}
+
+
+#figure-cases > div.js-plotly-plot {
+height: 0px !important;
+
+}
+
+#figure-icu > div.js-plotly-plot {
+height: 0px !important;
+
+}
+
 
