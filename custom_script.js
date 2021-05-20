@@ -18,7 +18,7 @@ if (document.querySelector("#figure-cumulative-vacc > div.js-plotly-plot > div >
     
         
    document.querySelector("#tooltip-box-cumulative-vacc").style.left = ((leftx+ widthx/2+ window.scrollX-180/2).toString()).concat("px");
-   document.querySelector("#tooltip-box-cumulative-vacc").style.top = ((figtop+window.scrollY-96).toString()).concat("px");
+   document.querySelector("#tooltip-box-cumulative-vacc").style.top = ((figtop+window.scrollY-84).toString()).concat("px");
     
    document.querySelector("#vertical-line-cumulative-vacc").style.left = ((leftx+ widthx/2+ window.scrollX).toString()).concat("px");
    document.querySelector("#vertical-line-cumulative-vacc").style.top = ((figtop+window.scrollY).toString()).concat("px");
@@ -32,17 +32,14 @@ if (document.querySelector("#figure-cumulative-vacc > div.js-plotly-plot > div >
         "</span>" +
          "<br>" +
          "<strong style='font-size: 16px; color: rgb(85, 170, 0);'>" + 
-           hoverText1 +  " vaccinated" +
+           hoverText1 +  "% vaccinated" +
          "</strong>" +
-         "<br>" + 
-         "<span style='font-size: 14px;'>" + "per 100 inhabitants" +
-         "</span>" +
-         "<br>" + 
+         "<br>"  +
          "<span style='font-size: 14px;'>" + "out of which" +
          "</span>" +
           "<br>" + 
          "<strong style='font-size: 16px; color: rgb(21, 167, 166);'>"  + 
-           hoverText2 + " fully vaccinated" + 
+           hoverText2 + "% fully vaccinated" + 
            "</strong>"
         "</div>"
         
