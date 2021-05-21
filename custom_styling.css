@@ -893,4 +893,8 @@ height: 0px !important;
 
 }
 
+#bottom-text > div {
+
+top: 1000px;
+}
 
