@@ -1,5 +1,6 @@
 input[type=checkbox], input[type=radio] {
     width: 0; 
+    opacity:0;
 }
 
 
