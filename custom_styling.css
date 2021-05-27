@@ -542,10 +542,6 @@ z-index: 400;
 /*top: 100px; */
 }
 
-#figure-icu-dummy > div.js-plotly-plot > div > div > svg:nth-child(1) > g.draglayer.cursor-crosshair > g > rect.nsewdrag.drag.cursor-pointer {
-pointer-events: none !important;
-}
-
 
 /* figure icu ------------------- END */
 
